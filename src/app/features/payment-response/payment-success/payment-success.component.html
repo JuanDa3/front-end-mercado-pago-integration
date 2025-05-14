@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <div class="card border-success">
+    <div class="card-header bg-success text-white">
+      <h2 class="mb-0">¡Pago exitoso!</h2>
+    </div>
+    <div class="card-body text-center py-5">
+      <div class="success-icon mb-4">
+        <i class="bi bi-check-circle-fill text-success" style="font-size: 5rem;"></i>
+      </div>
+      <h3 class="card-title">¡Gracias por tu compra!</h3>
+      <p class="card-text mt-3">Tu pago ha sido procesado correctamente.</p>
+
+      @if(paymentId) {
+        <p class="mt-4">ID de pago: <strong>{{ paymentId }}</strong></p>
+      }
+
+      <div class="mt-5">
+        <button (click)="backToHome()" class="btn btn-primary me-2">
+          <i class="bi bi-house me-2"></i>Volver al inicio
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
