@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
     apiurl: 'https://fakestoreapi.com',
-    backendUrl: 'http://localhost:3000',
+    backendUrl: 'https://checkout-pro-node-ts-integration.vercel.app',
 }
